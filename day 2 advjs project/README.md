@@ -1,4 +1,4 @@
-## Advanced JavaScript Lab 2
+## Advanced JavaScript day 2
 -----
 Note: Make your own interface for the following tasks.
 1. Create your own object that contains a list of numerical sequence, with the following details
