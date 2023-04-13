@@ -2,8 +2,6 @@
 
 ## Advanced JavaScript Day 1
 1. Update your cookie.js file to handle any possible wrong call of all implemented function by firing error message. e.g there should be an error message if getCookie was called without passing any parameter.
-----------------------
-Note: Make your own interface for the following tasks.
 
 2. Create a function that accepts only 2 parameters and throw exception if number of parameters either less than or exceeds 2 parameters
 
