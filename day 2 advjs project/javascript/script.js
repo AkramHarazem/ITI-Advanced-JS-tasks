@@ -1,3 +1,4 @@
+// Task 1 adding numbers by fixed steps
 function myObj(start, end, step) {
     if (typeof start !== "number" || typeof end !== "number" || typeof step !== "number") {
         throw new Error('please enter valid numbers')
@@ -16,9 +17,8 @@ function myObj(start, end, step) {
         return arrList
     }
     this.addNum = function (val) {
-        if (val !== (arrList[arrList.length - 1] + 2) || typeof val !== "number") {
+        if (val !== (arrList[arrList.length - 1] + step) || typeof val !== "number") {
             throw new Error(`Your input not match your step incrementing + ${step} or it isn't valid number `)
-
         }
         arrList.push(val)
     }
@@ -42,7 +42,7 @@ function myObj(start, end, step) {
 
 
 
-
+// Task 2 library boxes and books
 function Box(height, width, length, material) {
     if (typeof height !== 'number' || typeof width !== 'number' || typeof length !== 'number') {
         throw new Error("height, width or length isn't a number")
@@ -82,10 +82,6 @@ Box.prototype.deleteBook = function (title) {
     }
     return "There is no book with this title"
 }
-
-// Box.prototype.countBooks = function (){
-//     return this.Content.length
-// }
 
 
 Box.prototype.valueOf = function () {

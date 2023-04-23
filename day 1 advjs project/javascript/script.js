@@ -34,7 +34,7 @@ function reversePara() {
             throw new Error("Please enter only number")
         }
     }
-    var revInput = [].reverse.apply(arguments)
+    var revInput = [].reverse.call(arguments)
     return revInput
 }
 
@@ -47,8 +47,6 @@ function reversePara() {
 //     var argsArray = Array.from(arguments)
 //     return argsArray.reverse()
 // }
-
-// spread operator
 
 // TASK 5 constructor object method
 
@@ -152,7 +150,7 @@ var user = {
         myObj2.getSetGen.apply(user)
     }
 }
-// myObj.getSetGen.apply(user)
+// myObj2.getSetGen.apply(user)
 
 
 
